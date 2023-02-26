@@ -6,7 +6,7 @@ body {
 
 /* Style for the App container */
 .App {
-  max-width: 960px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -70,6 +70,11 @@ body {
   width: 240px;
   height: 360px;
   margin: 0 10px;
+}
+
+.item:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-color: black;
 }
 
 .item:hover .item-image p {
@@ -147,59 +152,4 @@ body {
 
 .star-button:hover {
   opacity: 1;
-}
-
-.carousel-container {
-  position: relative;
-  margin: 0 auto;
-  max-width: 960px;
-}
-
-.slick-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
-  cursor: pointer;
-  border: none;
-  background-color: transparent;
-  font-size: 2rem;
-  color: #fff;
-  outline: none;
-}
-
-.slick-prev {
-  left: 0;
-}
-
-.slick-next {
-  right: 0;
-}
-
-.carousel-container {
-  position: relative;
-  margin: 0 auto;
-  max-width: 960px;
-  padding: 0 20px; /* Add padding to the container */
-}
-
-.slick-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
-  cursor: pointer;
-  border: none;
-  background-color: transparent;
-  font-size: 2rem;
-  color: #fff;
-  outline: none;
-}
-
-.slick-prev {
-  left: 20px; /* Position the left arrow button */
-}
-
-.slick-next {
-  right: 20px; /* Position the right arrow button */
 }

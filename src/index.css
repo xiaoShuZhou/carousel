@@ -1,13 +1,205 @@
+/* Style for the whole page */
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #f7f7f7;
+  font-family: Arial, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Style for the App container */
+.App {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style for the Slider component */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  touch-action: pan-y;
+}
+
+/* Style for the slide items */
+.slick-slide {
+  margin: 0 10px;
+  outline: none;
+}
+
+/* Style for the slide image */
+.slick-slide img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style for the slide content */
+.slide-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the slide title */
+.slide-content h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Style for the slide price */
+.slide-content p {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.star-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 5px;
+}
+
+.item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  height: 360px;
+  margin: 0 10px;
+}
+
+.item:hover .item-image p {
+  transform: translateY(-5px);
+}
+
+.item-image {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70%;
+}
+
+.item-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.item-image p {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  transition: transform 0.2s ease-out;
+}
+
+.item-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 30%;
+  padding: 10px;
+}
+
+.item-details h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.originals {
+  font-size: 12px;
+  color: #8f8f8f;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.newItem {
+  font-size: 12px;
+  color: #8f8f8f;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+.star-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 50%;
+  opacity: 0.5;
+  transition: opacity 0.2s ease-out;
+}
+
+.star-button:hover {
+  opacity: 1;
+}
+
+.carousel-container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-size: 2rem;
+  color: #fff;
+  outline: none;
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-next {
+  right: 0;
+}
+
+.carousel-container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 20px; /* Add padding to the container */
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-size: 2rem;
+  color: #fff;
+  outline: none;
+}
+
+.slick-prev {
+  left: 20px; /* Position the left arrow button */
+}
+
+.slick-next {
+  right: 20px; /* Position the right arrow button */
 }
